@@ -36,6 +36,7 @@ namespace DesafioFundamentos.Models
                 decimal horas = Convert.ToDecimal(Console.ReadLine());
                 decimal valorTotal = precoInicial + precoPorHora * horas;
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+                veiculos.Remove(placa);
             }
             else
             {
